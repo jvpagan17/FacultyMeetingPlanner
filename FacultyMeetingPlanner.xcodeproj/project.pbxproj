@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B45101391E8824AC00D56A47 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B45101381E8824AC00D56A47 /* main.cpp */; };
+		B45101431E88258400D56A47 /* Schedule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B45101401E88258400D56A47 /* Schedule.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		B45101351E8824AC00D56A47 /* FacultyMeetingPlanner */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FacultyMeetingPlanner; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45101381E8824AC00D56A47 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B45101401E88258400D56A47 /* Schedule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Schedule.cpp; sourceTree = "<group>"; };
+		B45101411E88258400D56A47 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,8 @@
 		B45101371E8824AC00D56A47 /* FacultyMeetingPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				B45101401E88258400D56A47 /* Schedule.cpp */,
+				B45101411E88258400D56A47 /* Schedule.h */,
 				B45101381E8824AC00D56A47 /* main.cpp */,
 			);
 			path = FacultyMeetingPlanner;
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45101431E88258400D56A47 /* Schedule.cpp in Sources */,
 				B45101391E8824AC00D56A47 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
