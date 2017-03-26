@@ -234,7 +234,9 @@ functionName sortFunctions[] = { greaterThan, byMostPopularTeacher, bySumStudent
 string StudentList::sortList(int s, string order)
 {
 	erase();
-	load("student.csv");
+
+    load("student.csv");
+    
 	order = "File";
 
 	if (s > 1 && s < 5) {

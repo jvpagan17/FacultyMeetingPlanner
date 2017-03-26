@@ -252,6 +252,7 @@
 				B451013E1E8824AC00D56A47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

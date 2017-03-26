@@ -11,8 +11,6 @@
 using namespace std;
 
 
-
-
 class TeacherList {						//  Try direct inheritance ?????????????????????
 	unordered_map<string, int> list;
 public:
@@ -86,34 +84,37 @@ public:
 	TimeSlot();
 	TimeSlot(int n, int s);
 	~TimeSlot();
-	int getConflicts();
-	bool addStudent(Student s, int maxConflicts = 0);
+    bool addStudent(Student s, int maxConflicts = 0);
+    int getConflicts();
 	void print();
 //	int numberOfConflicts();
 };
 
 class Schedule {
 	vector<TimeSlot> slots;
-	int slotCounter;		// counts number of slots on schedule
-	int maxTimeSlots;
-	int maxSlotSize;
+    
 	int conflicts;
+    int maxTimeSlots;
+    int maxSlotSize;
+    int slotCounter; // counts number of slots on schedule
+	
 public:
-	Schedule(int t, int s );		// constructor with limit on number of slots
+	Schedule(int t, int s ); // constructor with limit on number of slots
 	~Schedule();
-	int getCounter();
+    int getConflicts();
+    int getCounter();
 	int getMaxTimeSlots();
 	int getMaxSlotSize();
-	void setMaxTimeSlots(int t);
+    void addSlot();
+    void addStudent(Student s, int maxConflicts = 0);
+    void erase();
+    void help();
+    void load(StudentList studentList);
+    void menu();
+    void print();
+    void setMaxTimeSlots(int t);
 	void setMaxSlotSize(int s);
-	void addSlot();
-	void addStudent(Student s, int maxConflicts = 0);
-	void print();
-	void load(StudentList studentList);
-	void erase();
-	int getConflicts();
-	void help();
-	void menu();
+
 };
 
 
