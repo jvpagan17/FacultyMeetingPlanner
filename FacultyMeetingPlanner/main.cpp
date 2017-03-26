@@ -6,8 +6,6 @@
 //  Copyright © 2017 Jose Pagan. All rights reserved.
 //
 
-
-
 /*
  Program: Fusion Meeting Planner
  Data: March 20, 2017
@@ -23,32 +21,26 @@
  -   of (i), (ii) and (iii).
  */
 
-
-
-
-
-#include "Schedule.h"
+ #include "Schedule.h"
+// With Verbosity, the level of tracing and error messaging increases.
 #define Verbosity 0
 
-int main() {
-    int maxTimeSlots = 14;
-    int maxSlotSize = 4;
-    
-    try {
-        Schedule aSchedule(maxTimeSlots, maxSlotSize);   // create a meeting schedule with 14 time slots.
-        aSchedule.help();
-#if(Verbosity)
-        aSchedule.print();
-#endif
-        aSchedule.menu();
-        
-        // With Verbosity, the level of tracing and error messaging increases.
-    }
-    catch (int e)
-    {
-        cout << "An exception occurred. Exception Nr. " << e << '\n';
-    }
-    return 0;
-}
 
+ int main() {
+   int maxTimeSlots = 14;
+   int maxSlotSize = 4;
 
+   try {
+// create a meeting schedule with 14 time slots.
+     Schedule aSchedule(maxTimeSlots, maxSlotSize);
+     aSchedule.help();
+ #if (Verbosity)
+     aSchedule.print();
+ #endif
+     aSchedule.menu();
+
+   } catch (int e) {
+     cout << "An exception occurred. Exception Nr. " << e << '\n';
+   }
+   return 0;
+ }
